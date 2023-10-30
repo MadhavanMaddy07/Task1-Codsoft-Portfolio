@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="profileimg">
+        <div class="container">
+            <nav class="navbar">
+                <h1>Madhavan</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Resume</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <p class="jobtitile">Front-End Developer</p>
+                <h2>Hi I'm <span>Madhavan</span></h2>
+                <h4>Crafting Immersive User Experiences with HTML, CSS, JavaScript, React<br>Transforming Designs into
+                    Responsive Web Reality</h4>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div class="about" id="about">
+        <h2>ABOUT</h2>
+        <p>Passionate and dedicated Front-End Developer with a strong foundation in HTML, CSS, and JavaScript and React
+            with passion for API design, storage solutions, and component architecture. Seeking a challenging role where
+            I can
+            leverage my expertise to create efficient and scalable systems that seamlessly integrate APIs, optimize
+            storage
+            utilization, and enhance overall component interactions. Eager to contribute my creative and problem-solving
+            skills to
+            a dynamic team, while continuously learning and adapting to emerging industry trends. Seeking an opportunity
+            to
+            collaborate on exciting projects, refine my technical abilities, and deliver exceptional user experiences.
+        </p>
+    </div>
+    <!-- Skill section -->
+    <div class="Skillcontainer" id="Skills">
+        <div class="Skilltitile">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="Skill-list">
+            <div class="skill1">
+                <h4>HTML5</h4><progress id="html" value="90" max="100"> 90% </progress>
+            </div>
+            <div class="skill2">
+                <h4>CSS3</h4><progress id="Css3" value="85" max="100"> 85% </progress>
+            </div>
+            <div class="skill3">
+                <h4>JavaScript</h4><progress id="Js" value="80" max="100"> 80% </progress>
+            </div>
+            <div class="skill4">
+                <h4>ReactJs</h4><progress id="react" value="85" max="100"> 85% </progress>
+            </div>
+            <div class="skill5">
+                <h4>Python</h4><progress id="python" value="70" max="100"> 70% </progress>
+            </div>
+            <div class="skill6">
+                <h4>VBA</h4><progress id="vba" value="60" max="100"> 60% </progress>
+            </div>
+        </div>
+    </div>
+    <!-- Project section -->
+    <div class="project-container" id="Projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project"><img src="Img/Project1.jpeg" alt="">
+                <div class="text-content">
+                    <h3>Weather App</h3>
+                    <p> Weather app integrates with GPS to provide you with the most accurate and up-to-date weather
+                        information
+                        for your location.<br>Weather App using HTML5, CSS3 and JS
+                        with methods of API and Promises
+                        function.</p>
+                </div>
+            </div>
+            <div class="project"><img src="Img/Project2.jpeg" alt="">
+                <div class="text-content">
+                    <h3>PestControl Landing Page</h3>
+                    <p> Pest control landing page can be an essential tool for lead generation, customer conversion, and
+                        establishing a strong online presence for your business.</p>
+                </div>
+            </div>
+            <div class="project"><img src="Img/Project3.jpeg" alt="">
+                <div class="text-content">
+                    <h3>To-Do-List</h3>
+                    <p> To-do list apps and websites offer a variety of benefits, from improved organization and time
+                        management to increased productivity and reduced stress.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact section -->
+    <div class="contact-container" id="Contact">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact-details">
+                <p>Name : Madhavan.M</p>
+                <p>Phone: 9629510031</p>
+                <p>Email : Madhavanmurugan04@gmail.com</p>
+                <p>
+                <Address>Address : Indra Nagar, Shenbakkam<br>Vellore-632004</Address>
+                </p>
+            </div>
+        </div>
+        <div class="resume-download">
+            <h2>Resume</h2>
+            <div class="download-link">
+                <p>Please download resume here...</p>
+                <a href="/Madhavan.M_Resume (1).pdf" download>Click Download</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="socail-link">
+            <footer><span>Copyright @</span></footer>
+            <a href="https://github.com/MadhavanMaddy07"><img src="Img/github.png" alt="" height="43" width="43"></a>
+            <a href="https://www.linkedin.com/in/madhavan-murugan-73672b186/"><img src="Img/linkedin (1).png" alt=""
+                    height="43" width="43"></a>
+        </div>
+    </div>
+    <script>
+        let nav = document.querySelector(".navbar");
+        let offset = nav.offsetTop;
+        window.addEventListener("scroll", function(){
+            if (window.scrollY>offset){
+                nav.classList.add("sticky");
+            }else{
+                nav.classList.remove("sticky");
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#profileimg{
+    width: 100%;
+    height: 100vh;
+    background: url('Img/Profileimg.jpg') no-repeat;
+    background-size: 70%;
+    background-position-x: 70%;
+    background-position-y: center;
+
+}
+.container{
+    padding: 0px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(253, 88, 88);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.title{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.title h2,h4{
+    margin-top: 20px;
+}
+.title span{
+    color:  rgb(253, 88, 88);
+}
+.title h4{
+    width: 40ch;
+}
+.about{
+    background-color: rgba(61, 61, 61, 0.315);
+    padding: 20px 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    min-height: 50vh;   
+}
+.about h2{
+    margin: 10px;
+    text-align: center;
+}
+.about p{
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 30px;
+    width: 50%;
+    margin: auto;
+}
+.Skillcontainer{
+    display: flex;
+    min-height: 50vh;
+}
+.Skilltitile{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+.Skill-list{
+    flex: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Skill-list h4{
+    margin: 10px;
+}
+.projects img{
+        width: 300px;
+        height: 350px;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+    align-items: end;
+
+}
+.project-container{
+    background: rgba(61, 61, 61, 0.315);
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+.project-container h2{
+    margin: 30px auto;
+    color: white;
+}
+.project{
+    position: relative;
+}
+.text-content{
+    position: absolute;
+    background-color: rgba(253, 251, 251, 0.473);
+    transition: 0.1s;
+    z-index: -1;
+    bottom: 0;
+}
+.project:hover .text-content{
+    bottom: 0px;
+    z-index: 10;
+}
+.text-content{
+    padding: 5px;
+}
+.text-content h3{
+    margin: 5px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    min-height: 50vh;
+    padding: 20px 0;
+}
+.contact-details{
+    margin-top: 10%;
+}
+.download-link{
+    margin-top: 20%;
+}
+.contact-container h2{
+    margin-top: 10%;
+    color: rgb(253, 88, 88);
+}
+.contact-container p{
+    padding: 5px 0;
+}
+.resume-download a{
+    text-decoration: none;
+    height: 10%;
+    width: 20%;
+    background-color: rgb(62, 62, 253);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.resume-download p{
+    margin-bottom: 30px;
+}
+.resume-download a:hover{
+    background-color: rgb(116, 116, 255);
+}
+.footer{
+    background-color: rgba(61, 61, 61, 0.315);
+    display: flex;
+    justify-content: center;
+}
+.socail-link{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+.socail-link img{
+    margin: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
